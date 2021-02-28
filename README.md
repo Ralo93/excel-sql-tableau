@@ -10,7 +10,11 @@ Excel, SQLite, PostgreSQL, Tableau(Public 2020.4)
 ## Illustrations
 <img src="https://user-images.githubusercontent.com/78420756/109421097-355a3a80-79d6-11eb-87b0-589c1c4c82eb.png" width="360" height="400"> <br>
 The Entity Relationship Diagram used for the SQL Project <p>
-  
+
+
+![tb2](https://user-images.githubusercontent.com/78420756/109423813-2fb62200-79e1-11eb-847a-6f9eee6583a0.PNG)
+![tb3](https://user-images.githubusercontent.com/78420756/109423814-304eb880-79e1-11eb-8848-daa1f482abde.PNG)
+![tb4](https://user-images.githubusercontent.com/78420756/109423815-304eb880-79e1-11eb-92aa-f8ec124af070.PNG)
 
 ## Project status
 Done.
