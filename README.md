@@ -19,8 +19,8 @@ The Entity Relationship Diagram used for the SQL Project <p>
 Interactive Tableau dashboards. <br>
 
 [Flights Per Airline Dashboard](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/FlightsPerAirlineDashboard/Dashboard1?publish=yes) <br>
-[Arrival and Departure Punctuality](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/ArrivalandDeparturePunctuality/Dashboard1) <br>
-[Cancellation Percentages](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/CancellationPercentages_16133947762710/Dashboard1?publish=yes) 
+[Arrival and Departure Punctuality Dashboard](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/ArrivalandDeparturePunctuality/Dashboard1) <br>
+[Cancellation Percentages Dashboard](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/CancellationPercentages_16133947762710/Dashboard1?publish=yes) 
 
 
 
