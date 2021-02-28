@@ -1,23 +1,12 @@
-## Table of contents
-* [General info](#general-info)
-* [Requirements](#requirements)
-* [Technologies](#technologies)
-* [Sources](#sources)
-
-
 ## General info
-A Temporal Difference (TD) Learning approach (SARSA in this case) for a modelled mikroactuator, shaped like a hemisphere.
-Also, a parallel Q-Learning approach is tested and compared.
+Here I have collected my files for training some Excel, SQL and Tableau. I tried to do at least one project on each of these technologies. <br>
+You can find the used excel dataset here: [NYSE Data](https://www.kaggle.com/dgawlik/nyse) <p>
 
-## Sources
-In collaboration with University of Augsburg. <br>
-good source: https://towardsdatascience.com/td-in-reinforcement-learning-the-easy-way-f92ecfa9f3ce
+The Entity Relationship Diagram used for the SQL Project: <br>
 
-## Requirements
-Octave1.0
 
 ## Technologies
-Octave1.0
+Excel, SQLite, PostgreSQL, Tableau(Public 2020.4)
 
 ## Illustrations
 
