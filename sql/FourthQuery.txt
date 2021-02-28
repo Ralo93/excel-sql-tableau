@@ -1,0 +1,21 @@
+/*Best selling artist per year*/
+
+WITH t1 AS (SELECT il.InvoiceLIneID AS ILID, ar.Name AS Band, (il.UnitPrice * il.Quantity) AS Price, STRFTIME('%Y', i.InvoiceDate) AS year
+FROM InvoiceLine il
+JOIN Invoice i
+ON i.InvoiceId = il.InvoiceId
+JOIN Track t
+ON t.TrackId = il.TrackId
+JOIN Album a
+ON a.AlbumId = t.AlbumId
+JOIN Artist ar
+ON ar.ArtistId = a.ArtistId),
+
+t2 AS (SELECT Band, year, SUM(Price) AS Price
+FROM t1
+GROUP BY 1,2
+ORDER BY 3 DESC)
+
+SELECT Band, MAX(Price), year
+FROM t2
+GROUP BY 3

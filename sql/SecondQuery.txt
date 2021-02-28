@@ -1,0 +1,39 @@
+/*Top 5 Artists in the 3rd Best-Selling Country (France)*/
+
+WITH t1 AS (SELECT i.BillingCountry AS Country, i.Total AS InvoiceTotal
+FROM Track t
+JOIN InvoiceLine il
+ON il.TrackId = t.TrackId
+JOIN Album a
+ON a.AlbumId = t.AlbumId
+JOIN Artist ar
+ON ar.ArtistId = a.ArtistId
+JOIN Invoice i
+ON i.InvoiceId = il.InvoiceId),
+
+t2 AS (SELECT Country, SUM(InvoiceTotal) AS ITotal
+FROM t1
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 3),
+
+t3 AS (SELECT Country, ITotal
+FROM t2
+ORDER BY 2
+LIMIT 1)
+
+SELECT ar.Name AS Name, SUM(il.UnitPrice * il.Quantity) AS Price
+FROM Track t
+JOIN InvoiceLine il
+ON il.TrackId = t.TrackId
+JOIN Album a
+ON a.AlbumId = t.AlbumId
+JOIN Artist ar
+ON ar.ArtistId = a.ArtistId
+JOIN Invoice i
+ON i.InvoiceId = il.InvoiceId
+GROUP BY 1
+HAVING i.BillingCountry = (SELECT Country FROM t3)
+ORDER BY 2 DESC
+LIMIT 5
+

@@ -1,0 +1,19 @@
+/*Number of Tracks Included In Top 10 Highest Invoice*/
+
+WITH t1 AS (SELECT i.BillingCity AS City, i.Total AS totaly, c.CustomerId AS Id, i.InvoiceID AS IID
+FROM Invoice i
+JOIN Customer c
+ON c.CustomerId = i.CustomerId
+ORDER BY 2 DESC
+LIMIT 10)
+
+SELECT Id, totaly , COUNT(il.TrackId) as TrackCounter
+FROM InvoiceLine il
+JOIN Invoice i
+ON i.InvoiceId = il.InvoiceId
+JOIN Customer c
+ON c.CustomerId = i.CustomerID
+JOIN t1
+ON t1.IID = i.InvoiceId
+GROUP BY 1
+ORDER BY 2 DESC

@@ -1,0 +1,20 @@
+/*Overall Sales Trend compared with Rock Musik*/
+
+WITH t1 AS (SELECT il.InvoiceLineId AS ID, STRFTIME('%Y', i.InvoiceDate) AS year, g.Name AS Genre, il.UnitPrice AS UP
+FROM Invoice i
+JOIN InvoiceLine il
+ON il.InvoiceId = i.InvoiceId
+JOIN Track t
+ON t.TrackId = il.TrackId
+JOIN Genre g
+ON g.GenreId = t.GenreId)
+
+SELECT year, SUM(UP) AS al
+FROM t1
+WHERE Genre = 'Rock'
+GROUP BY 1
+--------------------------
+SELECT year, SUM(UP) AS al
+FROM t1
+WHERE Genre != 'Rock'
+GROUP BY 1
