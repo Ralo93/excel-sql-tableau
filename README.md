@@ -18,8 +18,8 @@ The Entity Relationship Diagram used for the SQL Project <p>
 ![tb4](https://user-images.githubusercontent.com/78420756/109423815-304eb880-79e1-11eb-92aa-f8ec124af070.PNG) <br>
 Interactive Tableau dashboards. <br>
 
-* [Cancellation Percentages](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/CancellationPercentages_16)
-133947762710/Dashboard1?publish=yes
+* [Cancellation Percentages](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/CancellationPercentages_16
+133947762710/Dashboard1?publish=yes)
 * [Arrival and Departure Punctuality](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/ArrivalandDeparturePunctual
 ity/Dashboard1)
 * [Flights Per Airline Dashboard](https://public.tableau.com/profile/raphael.von.lottner#!/vizhome/FlightsPerAirlineDash
